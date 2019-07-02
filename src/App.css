@@ -1,0 +1,38 @@
+/* Use Variables */
+
+/* import Google Fonts */
+
+/* Since bootstrap is involved use the !important syntax */
+
+
+@import url('https://fonts.googleapis.com/css?family=DM+Sans|DM+Serif+Display|Lato|Oswald:300|Roboto+Condensed&display=swap');
+
+/* Variables for whole page use root */
+:root{
+  --primaryColor: #5fb7ea;
+  --primaryRGBA: rgba(0,0,0,0.3);
+  --primaryYellow: #cfcc23;
+  --mainGrey: grey;
+  --darkGrey: #5f5e5e;
+  --mainWhite: white;
+  --mainBlack: black;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.3rem;
+}
+
+.text-title{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: var(--mainSpacing);
+  text-transform: uppercase;
+}
+
+.text-main{
+  color: var(--primaryColor);
+}
+
+body{
+  font-family: "Roboto" !important;
+  background: var(--mainGrey) !important;
+  color: var(--mainBlack) !important;
+}
