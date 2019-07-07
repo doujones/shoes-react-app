@@ -1,24 +1,27 @@
-import React, { Component } from 'react';
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { FaSocks } from "react-icons/fa";
-import Home from './pages/HomePage'
-import About from './pages/AboutPage'
-import Products from './pages/ProductsPage'
-import Contact from './pages/ContactPage'
-import SingleProduct from './pages/SingleProductPage'
-import Default from './pages/DefaultPage.js'
-import Cart from './pages/CartPage.js'
-
-import { Route, Switch, BrowserRouter } from "react-router-dom";
-
+import React, { Component } from "react";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./pages/HomePage";
+import About from "./pages/AboutPage";
+import Products from "./pages/ProductsPage";
+import Contact from "./pages/ContactPage";
+import SingleProduct from "./pages/SingleProductPage";
+import Default from "./pages/DefaultPage.js";
+import Cart from "./pages/CartPage.js";
+import Navbar from "./components/Navbar";
+import { Route, Switch } from "react-router-dom";
+import Sidebar from "./components/Sidebar";
+import SideCart from "./components/SideCart";
+import Footer from "./components/Footer";
 class App extends Component {
   render(){
     return (
       <>
 
 
-    <BrowserRouter>
+    <Navbar/>
+    <Sidebar/>
+    <SideCart/>
     <Switch>
       <Route path="/" exact component= {Home}/>
       <Route path="/about" component= {About}/>
@@ -28,12 +31,13 @@ class App extends Component {
       <Route Path="/cart" component= {Cart}/>
       <Route component= {Default}/>
     </Switch>
-    </BrowserRouter>
+    <Footer/>
     </>
     );
   }
 }
 
-
-
 export default App;
+
+
+

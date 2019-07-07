@@ -10,11 +10,13 @@
 /* Variables for whole page use root */
 :root{
   --primaryColor: #5fb7ea;
-  --primaryRGBA: rgba(0,0,0,0.3);
+  --primaryRGBA: rgba(48, 67, 180, 0.3);
   --primaryYellow: #cfcc23;
   --mainGrey: grey;
+  --mainRed: red;
   --darkGrey: #5f5e5e;
   --mainWhite: white;
+  --mainBlue: blue;
   --mainBlack: black;
   --mainTransition: all 0.3s ease-in-out;
   --mainSpacing: 0.3rem;
