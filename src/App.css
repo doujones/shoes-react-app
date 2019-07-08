@@ -10,7 +10,7 @@
 /* Variables for whole page use root */
 :root{
   --primaryColor: #5fb7ea;
-  --primaryRGBA: rgba(48, 67, 180, 0.3);
+  --primaryRGBA: rgba(48, 67, 180, 0.4);
   --primaryYellow: #cfcc23;
   --mainGrey: grey;
   --mainRed: red;
@@ -35,6 +35,25 @@
 
 body{
   font-family: "Roboto" !important;
-  background: var(--mainGrey) !important;
-  color: var(--mainBlack) !important;
+  background: var(--mainWhite) !important;
+  color: var(--main) !important;
+}
+
+.main-link{
+  padding: 0.5rem 1rem;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: 4px;
+  border: none;
+  transition: var(--mainTransition);
+}
+.main-link:hover{
+ background: var(--darkGrey);
+ text-decoration: none;
+ color: var(--primaryColor);
+ outline-color: var(--darkGrey);
 }

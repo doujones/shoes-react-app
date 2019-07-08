@@ -12,16 +12,11 @@ export const linkData = [
   {
     id:3,
     text:'gifts',
-    path: '/product'
+    path: '/products'
   },  
   {
     id:4,
-    text:'contact',
-    path: '/contact'
-  },  
-  {
-    id:5,
-    text:'gifts',
+    text:'cart',
     path: '/cart'
   }  
 

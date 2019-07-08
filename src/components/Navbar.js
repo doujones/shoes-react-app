@@ -26,6 +26,7 @@ export default function Navbar() {
 }
 
 const NavWrapper = styled.nav`
+z-index: 1;
 position: sticky;
 top:0;
 position: -webkit-sticky;
