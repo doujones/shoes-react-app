@@ -56,7 +56,7 @@ export default class Services extends Component {
 }
 
 const ServicesWrapper = styled.section`
-background: rgba(95,183,234,0.2);
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
 .service-icon{
   font-size: 2.6rem;
   color: var(--mainBlack);
