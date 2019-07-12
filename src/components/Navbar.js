@@ -63,4 +63,7 @@ border-bottom: 3px solid var(--primaryColor);
   padding: 0 5px;
   border-radius: 50%;
 }
+@media (max-width: 576px){
+  .Boswell { text-align: center;
+  }
 `;
