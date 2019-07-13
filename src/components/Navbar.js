@@ -11,7 +11,7 @@ export default function Navbar() {
     return <NavWrapper>
     <div className="nav-center">
     <FaAlignJustify className="nav-icon" onClick={handleSidebar}/>
-    <p className="Boswell">Boswell's clothing store</p>
+    <p className="Boswell text-center">Boswell's clothing store</p>
     <div className="nav-cart">
     <FaCartPlus className="nav-icon" onClick={handleCart}>
     </FaCartPlus>

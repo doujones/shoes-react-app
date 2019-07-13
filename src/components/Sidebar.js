@@ -64,5 +64,6 @@ ul{
 }
 @media (min-width: 576px){
   width: 20rem;
+  top: 100px;
 }
 `;
