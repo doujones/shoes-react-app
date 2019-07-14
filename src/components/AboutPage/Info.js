@@ -18,7 +18,7 @@ export default function Info() {
       style={{ background: "var(--mainWhite)"}}
       />
       <Title title="about my store"/>
-      <p className="text-lead text-muted my-3">I am a clothes & Shoes Retailer, who has been in the clothes industry for 36 years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, similique!</p>
+      <p className="text-lead text-muted my-3">My name is William Boswell and I am a Clothes & Shoes Retailer, who has been in the clothes industry for 36 years. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, similique!</p>
       <p className="text-lead text-muted my-3">Please tell a friend, a family member or co-worker about Boswell's Clothing Store. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, similique!</p>
       <button
       className="main-link"

@@ -17,7 +17,7 @@ export default function Product({product}) {
       src={product.image} 
       className="card-img-top p-5" 
       alt="product" style={{ height: "320px" }}/>
-      <div className="product-icon">
+      <div className="product-icons">
       <Link to={`/products/${product.id}`} 
       onClick={() => setSingleProduct(product.id)}>
         <FaSearch className="icon"/>
@@ -26,6 +26,8 @@ export default function Product({product}) {
       </div>
       </div>
       <div className="card-body d-flex justify-content-between"></div>
+      <p className="mb-0 text-center text-uppercase">{product.title}</p>
+      <p className="mb-0 text-center text-uppercase">${product.price}</p>
       </div>
       </ProductWrapper>
     )
@@ -58,5 +60,26 @@ const ProductWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+ 
 }
-`
+
+.icon, .mb-0{
+  font-size: 2.5rem;
+  margin: 1rem;
+  padding: 0.5rem;
+  color: var(--primaryColor);
+  background: var(--mainBlack);
+  border-radius: 0.5rem;
+
+}
+.card:hover .product-icons {
+  opacity: 1;
+}
+.card-body{
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase
+}
+`;
