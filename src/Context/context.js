@@ -31,16 +31,17 @@ componentDidMount(){
   this.setProducts(items);
 }
 
-setProducts = (products) => {
-  let storeProducts = products.map(item =>{
-    const {id} = item.sys;
-    const product = {id,...item.fields};
-    return product
-  })
+setProducts = products => {
+  let storeProducts = products.map(item => {
+    const { id } = item.sys;
+    const image = item.fields.image.fields.file.url;
+    const product = { id, ...item.fields, image };
+    return product;
+  });
  let featuredProducts = storeProducts.filter(item => item.featured === true);
 this.setState({
   storeProducts,
-  filteredProducts:storeProducts,
+  filteredProducts: storeProducts,
   featuredProducts, 
   cart: this.getStorageCart(),
   singleProduct:this.getStorageProduct(),
