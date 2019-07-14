@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import {linkData} from "./linkData";
 import {socialData} from "./socialData";
-import  { items } from "./ProductData"
+import  { items } from "./ProductData";
 
 
 const ProductContext = React.createContext();
@@ -10,7 +10,7 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component{
 state = {
   sidebarOpen: false,
-  cartOpen: false,
+  cartOpen: true,
   links: linkData,
   socialIcons: socialData,
   cart: [],
@@ -154,7 +154,19 @@ closeCart = () => {
 openCart = () => {
   this.setState({ cartOpen: true });
 };
+increment = (id) => {
+  
+}
+decrement = (id) => {
 
+}
+removeItem = (id) => {
+
+}
+
+clearCart = () => {
+
+}
   render() {
     return (
     <ProductContext.Provider value={{
@@ -164,7 +176,11 @@ openCart = () => {
       closeCart : this.closeCart,
       openCart : this.openCart,
       addToCart: this.addToCart,
-      setSingleProduct: this.setSingleProduct
+      setSingleProduct: this.setSingleProduct,
+      increment:this.increment,
+      decrement:this.increment,
+      removeItem: this.removeItem,
+      clearCart: this.clearCart
     }}>
     {this.props.children}
     </ProductContext.Provider>
