@@ -4,6 +4,7 @@ import {socialData} from "./socialData";
 import  { items } from "./ProductData";
 
 
+
 const ProductContext = React.createContext();
 
 
@@ -233,11 +234,39 @@ this.setState(
 )
 };
 handleChange = (event) =>{
-
+  const name = event.target.name
+  const value = event.target.type === "checked" ? event.target.checked: event.target.value;
+  this.setState({
+    [name]:value 
+  },this.sortData);
 }
 sortData = () =>{
+  const {storeProducts,price,company,shipping,search} = this.state
+  let tempPrice = parseInt(price);
+  let tempProducts = [...storeProducts];
+  tempProducts = tempProducts.filter(item =>
+  item.price <= tempPrice
+  );
 
-}
+  if(company !=="all"){
+    tempProducts = tempProducts.filter(item => item.company === company)
+  }
+  if(search.length>0){
+    tempProducts = tempProducts.filter(item => {
+      let tempSearch = search.toLowerCase();
+      let tempTitle = item.title.toLowerCase().slice(0,search.length);
+      if(tempSearch === tempTitle){
+        return item;
+      }
+    })
+  }
+  if(shipping){
+    tempProducts = tempProducts.filter(item =>
+    item.freeShipping === true);
+  }
+
+  this.setState({filteredProducts: tempProducts})
+};
   render() {
     return (
     <ProductContext.Provider value={{

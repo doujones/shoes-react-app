@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import {ProductConsumer} from "../Context/context"
-import { socialData } from "../Context/socialData"
+
 
 
 export default function Footer() {
