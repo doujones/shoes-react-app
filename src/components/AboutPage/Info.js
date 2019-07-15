@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from "../Title"
 import aboutBcg from "../../images/shoe3.jpeg"
-import secondBcg from "../../images/shoe4.jpg"
+import secondBcg from "../../images/mainBcg.jpeg"
 
 export default function Info() {
   return (
