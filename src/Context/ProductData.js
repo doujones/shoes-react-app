@@ -7,7 +7,8 @@ export const items = [
       company: "Ralphh Lauryn",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/mainBcg.jpeg" } } }
+      image: { fields: { file: { url: "img/images/mainBcg.jpeg" } } },
+      freeShipping: false
     }
   },
   {
@@ -18,7 +19,8 @@ export const items = [
       company: "Ralphh Lauryn",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/shoe1.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe1.jpg" } } },
+      freeShipping: false
     }
   },
   {
@@ -29,7 +31,8 @@ export const items = [
       company: "Ralphh polo",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/shoe2.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe2.jpg" } } },
+      freeShipping: true
     }
   },
   {
@@ -40,7 +43,8 @@ export const items = [
       company: "Lauryn Bill",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/shoe3.jpeg" } } }
+      image: { fields: { file: { url: "img/images/shoe3.jpeg" } } },
+      freeShipping: true
     }
   },
   {
@@ -51,7 +55,8 @@ export const items = [
       company: "Mike Course",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: false,
-      image: { fields: { file: { url: "img/images/shoe4.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe4.jpg" } } },
+      freeShipping: true
     }
   },
   {
@@ -62,7 +67,8 @@ export const items = [
       company: "Michael Jordon",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: false,
-      image: { fields: { file: { url: "img/images/shoe5.jpeg" } } }
+      image: { fields: { file: { url: "img/images/shoe5.jpeg" } } },
+      freeShipping: true
     }
   },
   {
@@ -73,7 +79,8 @@ export const items = [
       company: "Lebron Tamess",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: false,
-      image: { fields: { file: { url: "img/images/shoe6.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe6.jpg" } } },
+      freeShipping: true
     }
   },
   {
@@ -84,7 +91,8 @@ export const items = [
       company: "Kobie Bos",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: false,
-      image: { fields: { file: { url: "img/images/shoe7.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe7.jpg" } } },
+      freeShipping: false
     }
   },
   {
@@ -95,7 +103,8 @@ export const items = [
       company: "Fuboo",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/shoe8.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe8.jpg" } } },
+      freeShipping: false
     }
   },
   {
@@ -106,7 +115,8 @@ export const items = [
       company: "Ralphh Lauryn",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: true,
-      image: { fields: { file: { url: "img/images/shoe9.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe9.jpg" } } },
+      freeShipping: false
     }
   },
   {
@@ -117,7 +127,8 @@ export const items = [
       company: "Michaele Jakson",
       description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam itaque explicabo quisquam illum voluptate amet nesciunt natus sint? Asperiores, dignissimos?",
       featured: false,
-      image: { fields: { file: { url: "img/images/shoe10.jpg" } } }
+      image: { fields: { file: { url: "img/images/shoe10.jpg" } } },
+      freeShipping: false
     }
   },
   
